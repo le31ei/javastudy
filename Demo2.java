@@ -16,7 +16,6 @@ class Ui extends JFrame{
     JButton jb1,jb2,jb3,jb4,jb5;
 
     public Ui(){
-        JFrame jf = new JFrame();
         jb1 = new JButton("左边");
         jb2 = new JButton("右边");
         jb3 = new JButton("中间");
@@ -29,6 +28,7 @@ class Ui extends JFrame{
         this.add(jb5, BorderLayout.SOUTH);
         setSize(500,500);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setResizable(false);
         this.setVisible(true);
     }
 }
